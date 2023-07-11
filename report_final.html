@@ -22,13 +22,13 @@
         document.body.appendChild(renderer.domElement);
         renderer.setSize(width, height);
         // 背景の色を設定
-        renderer.setClearColor(0xffffff);
+        renderer.setClearColor(0x000000);
 
         // シーンを作成
         const scene = new THREE.Scene();
 
         //フォグ
-        scene.fog = new THREE.Fog(0xffffff, 10, 400);
+        scene.fog = new THREE.Fog(0x000000, 10, 400);
         
         // カメラを作成
         const camera = new THREE.PerspectiveCamera(45, width / height);
