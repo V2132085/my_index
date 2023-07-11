@@ -54,11 +54,12 @@
         var texture = textureLoader.load("img/scaryface.png");
         const material1 = new THREE.SpriteMaterial({ map: texture,});
 
-        const sprite1 = new THREE.Sprite(material);
+        const sprite1 = new THREE.Sprite(material1);
         sprite1.scale.set(5,10,5);
         sprite1.position.set(0,0,-150);
         scene.add(sprite1);
-        
+
+        var textureLoader = new THREE.TextureLoader();
         var texture = textureLoader.load("img/human.png");
         const material2 = new THREE.SpriteMaterial({ map: texture,});
 
