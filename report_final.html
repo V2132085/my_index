@@ -5,8 +5,8 @@
     <script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
   </head>
 <body>
- <h1>顔が迫ってくる</h1>
- 怖い顔を避けようとカメラを動かしても迫ってくるようなものを作った<br>
+ <h1>最終課題</h1>
+ 霧の奥から顔が出てくる<br>
  
  <script>
       // ページの読み込みを待つ
@@ -22,7 +22,7 @@
         document.body.appendChild(renderer.domElement);
         renderer.setSize(width, height);
         // 背景の色を設定
-        //renderer.setClearColor(0x808080);
+        renderer.setClearColor(0xffffff);
 
 
         // シーンを作成
@@ -30,7 +30,7 @@
 
 
         //フォグ
-        scene.fog = new THREE.Fog(0x000000, 50, 100);
+        scene.fog = new THREE.Fog(0xffffff, 50, 100);
         
         // カメラを作成
         const camera = new THREE.PerspectiveCamera(45, width / height);
