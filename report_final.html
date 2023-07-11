@@ -51,8 +51,8 @@
 
         //顔の画像
         var textureLoader = new THREE.TextureLoader();
-        var texture1 = textureLoader.load("img/scaryface.png");
-        const material1 = new THREE.SpriteMaterial({ map: texture1,});
+        var texture = textureLoader.load("img/scaryface.png");
+        const material = new THREE.SpriteMaterial({ map: texture,});
         
         //var texture2 = textureLoader.load("img/human.png");
         //const material2 = new THREE.SpriteMaterial({ map: texture2,});
@@ -60,7 +60,7 @@
         material.fog = true;
 
         //画像配置
-        const sprite1 = new THREE.Sprite(material1);
+        const sprite1 = new THREE.Sprite(material);
         sprite1.scale.set(5,10,5);
         sprite1.position.set(0,0,-150);
         scene.add(sprite1);
