@@ -57,6 +57,8 @@
         var texture2 = textureLoader.load("img/human.png");
         const material2 = new THREE.SpriteMaterial({ map: texture2,});
 
+        material.fog = true;
+
         //画像配置
         const sprite1 = new THREE.Sprite(material1);
         sprite1.scale.set(5,10,5);
@@ -67,8 +69,6 @@
         sprite2.scale.set(4,8,4);
         sprite2.position.set(0,0,0);
         scene.add(sprite2);
-
-        material.fog = true;
         
         //const sprite3 = new THREE.Sprite(material);
         //sprite3.scale.set(1,2,1);
