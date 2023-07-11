@@ -24,13 +24,11 @@
         // 背景の色を設定
         renderer.setClearColor(0xffffff);
 
-
         // シーンを作成
         const scene = new THREE.Scene();
 
-
         //フォグ
-        const scene.fog = new THREE.Fog(0xffffff, 50, 100);
+        const scene.fog = new THREE.Fog(0xffffff, 40, 150);
         
         // カメラを作成
         const camera = new THREE.PerspectiveCamera(45, width / height);
@@ -59,7 +57,7 @@
         //顔
         const sprite1 = new THREE.Sprite(material);
         sprite1.scale.set(5,10,5);
-        sprite1.position.set(0,0,-100);
+        sprite1.position.set(0,0,-80);
         scene.add(sprite1);
 
         //const sprite2 = new THREE.Sprite(material);
@@ -76,9 +74,6 @@
         //sprite4.scale.set(1,2,1);
         //sprite4.position.set(0,0,0);
         //scene.add(sprite4);
-
-        //フォグ
-        scene.fog = new THREE.Fog(0x000000, 1, 2000);
         
         update();
 
