@@ -54,6 +54,8 @@
         var texture = textureLoader.load("img/scaryface.png");
         const material = new THREE.SpriteMaterial({ map: texture,});
 
+        material.fog = true;
+
         //顔
         const sprite1 = new THREE.Sprite(material);
         sprite1.scale.set(5,10,5);
